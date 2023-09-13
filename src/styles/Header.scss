@@ -1,0 +1,38 @@
+@import '../utils/Colors.scss';
+
+.header {
+    position: absolute;
+    width: 100%;
+    margin-left: 1.5vw;
+    margin-top: 4%;
+
+    @media (max-width: 1500px) {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    @media (max-width: 1250px) {
+        background-color: transparent;
+        border-radius: 25px;
+    }
+
+}
+
+.header h1 {
+    -webkit-text-stroke: $color-Title1ParamTextStroke;
+    color: transparent;
+    font-size: 1.5rem;
+    text-decoration-line: underline;
+
+    @media (max-width: 1250px) {
+        -webkit-text-stroke: initial;
+        color: $color_title1TabMobile;
+        font-size: 1rem;
+        margin: 0;
+        text-decoration-line: none;
+        z-index: 1;
+    }
+}

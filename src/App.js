@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import PrincipalSection from './components/PrincipalSection';
+import About from './components/About';
+import Project from './components/Project';
+import ProfilGitHub from './components/ProfilGitHub';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
+import './styles/Body.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <PrincipalSection/>
+          <About identifier='anchorAbout'/>
+          <Project identifier='anchorProject'/>
+          <Contact identifier='anchorContact' email='MjDevWeb09@gmail.com' phone='+336 .. .. .. ..'/>
+          <ProfilGitHub identifier='anchorGit'/>
+          <Footer/>   
+      </div>
+    
   );
 }
 

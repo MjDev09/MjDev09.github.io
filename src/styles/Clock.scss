@@ -1,0 +1,19 @@
+
+.boxTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 50px;
+    color: #0e2b07;
+
+    @media(max-width:415px) {
+        display: none;
+    }
+
+    &__clock, &__date {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 0.6rem;
+    }
+}

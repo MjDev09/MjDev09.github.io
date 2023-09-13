@@ -1,0 +1,168 @@
+@import '../utils/Colors.scss';
+@import '../utils/Utils.scss';
+$background_screen-project: '../assets/montagneC.webp';
+
+.boxSectionProject {
+    background: linear-gradient(#f8f8fb, #e6e6e6); 
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: $borderSection;
+    padding-bottom: 50px;
+
+    &-screen {
+        background-image: url($background_screen-project);
+        background-size: cover;
+        padding-top: 0;
+        padding-bottom: 0;
+        background-repeat: no-repeat;
+        border-top: none;
+    }
+}
+
+.boxCards {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 20px;
+    row-gap: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+    @media (max-width:1615px) {
+        row-gap: 10px;
+    }
+
+    @media (max-width: 1250px) {
+        column-gap:10px;
+        row-gap: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    @media (max-width:750px) {
+        width: 90%;
+    }
+
+    &-screen {
+        width: 95%;
+        box-sizing: border-box;
+        
+
+        @media(max-width:1620px){
+            row-gap: 5px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__box {
+        height: auto;
+        &-screen {
+            height: auto
+            
+        }
+    }
+
+    &__card {
+        box-sizing: border-box;
+        border: $borderProject;
+        border-radius: 25px;
+        cursor: pointer;
+
+        &-screen {
+            border:$borderProject-screen;
+            margin: 0;
+        }
+    }
+
+    &__card > div {
+        padding: 0;
+    }
+
+}
+
+.imageCard {
+    object-fit: contain;
+    width: 100%;
+    max-height: 350px;
+    height: 40vw;
+
+    
+    &-screen {
+        height: 15vw;
+        max-height: 150px;
+    }
+
+    @media (max-width: 1620px) {
+        max-height: 100px;
+    }
+
+    @media (max-width: 1250px) {
+        object-fit: contain;
+        height: 15vw;
+    
+    }
+}
+
+.ant-modal-body img {
+    height: 100%;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.ant-modal .ant-modal-title {
+    font-family: 'Rouge Script', cursive;
+    font-size: xx-large;
+    text-decoration: underline;
+    color: $color_fontMenu;
+}
+
+.ant-modal-content {
+    height: 70vh;
+    max-height: 850px;
+    position: absolute;
+    top:0;
+    transform: translate(0, 0);;
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow-y: auto;
+    display: "flex";
+    align-Items: "center";
+    justify-Content: "center";
+}
+
+.ant-modal-content a {
+    color: $color_font;
+}
+
+.ant-btn-primary {
+    color: $color_fontMenu;
+    background-color: $color_background;
+}
+
+.ant-btn-primary:hover {
+    color: white;
+    background-color: $color_fontMenu !important;
+}
+
+.ant-btn:hover {
+    color: white;
+    background-color:$color_fontMenu;
+}
+
+.ant-btn-default:hover {
+    background-color: $color_background;
+    color: $color_fontMenu !important;
+    border: $color_fontMenu 1px solid !important;
+}
+
+.ant-card .ant-card-body {
+    padding: 0;
+}
+

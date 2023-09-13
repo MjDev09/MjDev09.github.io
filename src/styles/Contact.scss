@@ -1,0 +1,87 @@
+@import '../utils/Colors.scss';
+@import '../utils/Utils.scss';
+$background_screen-contact: '../assets/forêtC.webp';
+
+.sectionContact {
+    max-width: 2000px;
+    background: linear-gradient( #e6e6e6, #fcfcfc); 
+    margin: auto;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: $borderSection;
+    padding-bottom: 50px;
+
+    &-screen {
+        background-size: cover;
+        padding-top: 0;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        box-sizing: border-box;
+        border-top: none;
+        padding-bottom: 0;
+    }
+
+    &-background {
+        background-image: url($background_screen-contact);
+    }
+}
+
+.boxContact {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    background-color: $color_background;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: large;
+
+    @media (max-width:750px) {
+        width: 90%;
+    }
+
+    &-screen {
+        background-color: $color_background-screen;
+        padding: 25px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        box-sizing: border-box;
+        margin-bottom: 150px;
+        margin-top: 50px;
+
+    }
+
+    &__anchor{
+        &:link {
+            color: $color_fontMenu;
+        }
+
+        &:visited {
+            color: $color_fontMenu;
+        }
+
+        &-screen {
+            &:link {
+                color: $color_font-screen;
+            }
+            
+            &:visited {
+                color: $color_font-screen;
+            }
+        }
+    }
+
+
+    &__icon {
+        color: $color_fontMenu;
+        margin-right: 10px;
+
+        &-screen {
+            color:$color_font-screen;
+        }
+    }
+}

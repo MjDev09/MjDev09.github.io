@@ -1,0 +1,10 @@
+body {
+    max-width: 2000px ;
+    margin: auto;  
+    scroll-behavior: smooth; 
+
+    @media (max-width: 1250px) {
+        background-color: transparent;
+        border-radius: 25px;
+    }
+}

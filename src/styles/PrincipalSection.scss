@@ -1,0 +1,245 @@
+$background_screen : '../assets/arbreC.webp';
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import '../utils/Colors.scss';
+
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    min-height: 850px;
+    position: relative;
+
+    @media (max-width: 1250px) {
+        min-height: 300px;
+        
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        @media (max-width: 1250px) {
+            display: none;
+        }
+    }
+
+    &__screen {
+        width: 58.4%;
+        height: 38.2vw;
+        max-height: 760px;
+        background-image: url($background_screen);
+        background-size: 100% 100%; 
+        background-repeat: no-repeat;
+        object-fit: contain;
+        background-color: $color_background-screenPicture;
+        background-blend-mode: hard-light;
+        position: absolute;
+        top: 46.4%;
+        left: 50.8%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 1500px) {
+            height: 37.6vw;
+        }
+
+
+        @media (min-width:1501px) {
+            top: 45.2%;
+        }
+
+        @media (max-width:1250px) {
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            min-width: 300px;
+            max-height: none;
+            transform: none;
+            left: 0;
+            border: 20px solid ;
+            border-radius: 25px;
+            box-sizing: border-box;
+        }
+    }
+
+    &__title {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+}
+
+.refMenu {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+
+    @media(max-width:1250px){
+        display: block;
+        z-index: 1;
+        top: 0;
+        transform: translate(-10%, 0);
+        right: 10%;
+        position: absolute;
+        color: $color_font-screen;
+    }
+
+}
+
+.nav {
+    max-width: 180px;
+    height: 200px;
+    position: absolute;
+    right: 1%;
+    bottom: 35%;
+    display: flex;
+    align-items: center;
+    background-color: $color_background;
+
+    @media (max-width: 1250px) {
+        bottom: -40px;
+        max-width: 1250px;
+        right: initial;
+        height: 40px;
+        width: 100%;
+    }
+
+    &__list {
+        list-style-type: none;
+        font-family: 'Rouge Script', cursive;
+        font-size: x-large;
+        font-weight: 700;
+        flex-direction: column;
+        display: flex;
+        padding: 5px;
+        margin: 0px;
+        height: 200px;
+        justify-content: space-around;
+        text-decoration: underline;
+        color: $color_fontMenu;
+        
+
+        @media (max-width: 1250px) {
+            width: 100%;
+            flex-direction: row;
+            padding: 0;
+            height: 20px;
+            text-decoration: none;
+            font-size: x-large;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 600px) {
+            font-size: large;
+            padding-top: 5px;
+        }
+
+        @media (max-width: 500px) {
+            font-size: medium;
+            padding-top: 5px;
+            
+        }
+
+        @media (max-width: 450px) {
+            font-size: smaller;
+        }
+
+    }
+    &__anchor:hover {
+        cursor: pointer;
+    }
+
+    &__anchor:link {
+            color: $color_fontMenu;
+        }
+
+    &__anchor:visited {
+            color: $color_fontMenu;
+        }
+    
+}
+
+.taskbar {
+    width: 100%;
+    height:27px;
+    background-color: $color_NavAndTaskbar;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    @media (max-width: 1250px) {
+        z-index: 2;
+        height: 49px;
+    }
+
+    @media (max-width: 360px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    &__boxEmpty{
+        width: 50px;
+    }
+
+    &__middleBox{
+        display: flex;
+    }
+
+    &__button {
+        width: 12px;
+        height: 27px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        text-align: center;
+        color: $color_font-header;
+        margin-right: 10px;
+
+        @media (max-width: 1250px) {
+            width: 49px;
+            height: 49px;
+            margin-right: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__button-home{
+        margin-right: 50px;
+
+        @media (max-width: 500px) {
+            margin-right: 0;
+        }
+    }
+}
+
+.boxMapDivScreen {
+
+    @media (max-width:1250px) {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.boxMapDivScreen > div {
+
+    @media (max-width:1250px) {
+        height: 100%;
+        width: 100%;
+    }
+}
