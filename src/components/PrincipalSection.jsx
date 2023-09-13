@@ -6,8 +6,9 @@ import title from '../assets/title_image01C.webp'
 import Clock from './Clock';
 import NavList from './NavList';
 import ButtonIcon from './ButtonIcon';
-import { HomeOutlined, FilePdfFilled, MailFilled, UserOutlined, FolderOpenFilled, FolderFilled, GithubOutlined } from '@ant-design/icons';
+import { HomeOutlined, FilePdfFilled, RadarChartOutlined, MailFilled, UserOutlined, FolderOpenFilled, FolderFilled, GithubOutlined } from '@ant-design/icons';
 import ProfilGitHub from './ProfilGitHub';
+import Competence from './Competences';
 import Contact from './Contact';
 import About from './About';
 import Project from './Project';
@@ -18,7 +19,7 @@ function PrincipalSection(){
     const divsData = [
         { id: 1, isVisible: false, content: About, classname: 'boxAbout boxAbout-screen boxAbout-background', classNameTitle: 'subTitle subTitle-screen', classNameParagraph: 'boxAbout__paragraph boxAbout__paragraph-screen', icon: UserOutlined},
         { id: 2, isVisible: false, content: Project, classname: 'boxSectionProject boxAbout-screen boxSectionProject-screen', classnameSubtitle:'subTitle subTitle-screen', classnameBoxCard:'boxCards boxCards-screen', classnameBoxCard_box:'boxCards__box boxCards__box-screen', classnameBoxCardCard:'boxCards__card boxCards__card-screen', classnameImageCard:'imageCard imageCard-screen', classnameImageModal:'imageCard', icon: FolderFilled},
-        //{ id: 3, isVisible: false, content: Clock, icon: FilePdfFilled},
+        { id: 3, isVisible: false, content: Competence, classname:"boxAbout-screen boxCompetences boxCompetences-screen", classNameTitle:'subTitle subTitle-screen', classNameParagraph:"boxCompetences__paragraph boxCompetences__paragraph-screen", icon: RadarChartOutlined},
         { id: 4, isVisible: false, content: Contact, classname: 'sectionContact-screen sectionContact boxAbout-screen sectionContact-screen sectionContact-background', classnameSubtitle:'subTitle subTitle-screen', classnamebox:"boxContact boxContact-screen", classNameParagraph:'boxContact__info', email:'MjDevWeb09@gmail.com', classnameIcon:'boxContact__icon-screen',  classnameEmail:'boxContact__anchor boxContact__anchor-screen', icon: MailFilled},
         { id: 5, isVisible: false, content: ProfilGitHub, classname: 'boxAbout-screen sectionContact-screen sectionProfilGitHub  sectionProfilGitHub-screen', classnameSubtitle:'subTitle subTitle-screen', classnamebox:"boxContact boxContact-screen", classNameParagraph:'boxContact__info', classnameIcon:'boxContact__icon-screen',  classnameEmail:'boxContact__anchor boxContact__anchor-screen', icon: GithubOutlined}
       ];

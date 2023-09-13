@@ -1,0 +1,57 @@
+@import '../utils/Colors.scss';
+@import '../utils/Utils.scss';
+$background_screen-competences: '../assets/arbrevueducielC.webp';
+
+.boxCompetences {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    background: linear-gradient(#e6e6e6,#f8f8fb, #e6e6e6);
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-top: $borderSection;
+
+    &-screen {
+        background-image: url($background_screen-competences);
+        box-sizing: border-box;
+        background-size: cover;
+    }
+
+    &-screen li{
+        color: $color_font-screen;
+    }
+}
+
+.boxCompetences__paragraph {
+    max-width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: center;
+
+    &-screen {
+        background-color: $color_background-screen;
+        font-family: 'Raleway', sans-serif;
+        padding: 30px 60px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        box-sizing: border-box;
+    }
+}
+
+.marker_competence {
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    flex-basis: calc(100% / 5);
+    color: $color_fontMenu;
+    background-color: $color_background;
+
+}
