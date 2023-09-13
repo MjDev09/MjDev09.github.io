@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.64abc4d1.css",
-    "main.js": "/static/js/main.43abcfd9.js",
+    "main.css": "/static/css/main.006e42cc.css",
+    "main.js": "/static/js/main.5ebc2b66.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/arbreC.webp": "/static/media/arbreC.b5ebce0ebeac85a13697.webp",
     "static/media/ecran_ordiC.webp": "/static/media/ecran_ordiC.4d3bb4029d457257209d.webp",
     "static/media/montagne2C.webp": "/static/media/montagne2C.ea9790071f565448edfe.webp",
+    "static/media/arbrevueducielC.webp": "/static/media/arbrevueducielC.abaf49c56f48cf3ca97e.webp",
     "static/media/forêtC.webp": "/static/media/forêtC.0616e861cbe439a109fc.webp",
     "static/media/arbresC.webp": "/static/media/arbresC.ab47cb4d3faa2cf9f72f.webp",
     "static/media/Screen_PortfolioC.webp": "/static/media/Screen_PortfolioC.7e04f16d7d99faaca552.webp",
@@ -15,12 +16,12 @@
     "static/media/title_image01C.webp": "/static/media/title_image01C.6b91f57ad7042f36c6df.webp",
     "static/media/Mon_vieux_grimoireC.webp": "/static/media/Mon_vieux_grimoireC.71192036b669328dbc42.webp",
     "index.html": "/index.html",
-    "main.64abc4d1.css.map": "/static/css/main.64abc4d1.css.map",
-    "main.43abcfd9.js.map": "/static/js/main.43abcfd9.js.map",
+    "main.006e42cc.css.map": "/static/css/main.006e42cc.css.map",
+    "main.5ebc2b66.js.map": "/static/js/main.5ebc2b66.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.64abc4d1.css",
-    "static/js/main.43abcfd9.js"
+    "static/css/main.006e42cc.css",
+    "static/js/main.5ebc2b66.js"
   ]
 }
