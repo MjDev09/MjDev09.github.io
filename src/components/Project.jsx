@@ -3,7 +3,7 @@ import projectList from '../Data/ProjectList.json';
 import { Card, Modal, Button, Image, Typography } from 'antd';
 import '../styles/Project.scss';
 import ModalProject from './ModalProject';
-import Portfolio_de_travaux_darchitecte from '../assets/Projets/Portfolio_de_travaux_darchitecte.png';
+import Portfolio_de_travaux_darchitecte from '../assets/Projets/Portfolio_de_travaux_darchitecte.webp';
 import Application_web_Kasa_REACTC from '../assets/Projets/Application_web_Kasa_REACTC.webp';
 import Mon_vieux_grimoireC from '../assets/Projets/Mon_vieux_grimoireC.webp';
 import Screen_PortfolioC from '../assets/Projets/Screen_PortfolioC.webp';

@@ -5,7 +5,7 @@
 		"cover": "Portfolio_de_travaux_darchitecte",
 		"description": "Création d'une page web dynamique avec Javascript dans le cadre de ma formation Développeur Web.  Le projet consistait à développer la page de présentation des travaux d'une architecte, la page de connexion de l'administrateur du site ainsi que la modale pour uploader de nouveaux travaux",
 		"link":"https://github.com/MjDev09/Projet3_page_Javascript",
-		"problematic":"Les problématiques de ce projet étaient nombreuses mais centrées sur les particularités de Javascript. En effet, il fallait réaliser un affichage dynamique afin de pouvoir filtrer la galerie par catégorie mais aussi afficher la galerie dans une modale. Une fois cette modale créée et accessible uniquement par authentification, on devait pouvoir ajouter/supprimer des projets et afficher ensuite la galerie sans avoir le besoin de recharger la page",
+		"problematic":"Les problématiques de ce projet étaient nombreuses mais centrées sur les particularités de Javascript. En effet, il fallait réaliser un affichage dynamique afin de pouvoir filtrer la galerie par catégorie mais aussi afficher la galerie dans une modale. Une fois cette modale créée et accessible uniquement par authentification, on devait pouvoir ajouter/supprimer des projets et afficher ensuite la galerie sans avoir le besoin de recharger la page. Pour répondre à ces problématiques je me suis beaucoup servi des ressources de MDN pour apprendre à utiliser les méthodes de Javascript ainsi que la fonstion fetch.",
 		"Technologies": [
 			"Javascript  /  ",
             "Html  /  ",
@@ -18,7 +18,7 @@
 		"cover": "Application_web_Kasa_REACTC",
 		"description": "Développement de la plateforme web Kasa avec React dans le cadre de ma formation Développeur web. Le projet consistait à créer le front-end du site avec REACT. Plusieurs routes étaient à créer tout comme des animations pour des menus déroulants.",
 		"link":"https://github.com/MjDev09/P6-kasa",
-		"problematic":"Les principales proméblatiques de ce projet concernait la logique même de REACT et notamment l'utilisation de sa logique de composants pour éviter tout duplication de code, sa logique de route et les récupérations de paramètres dans l'URL. Les deux autres problématiques concernaient la création d'animation et la création d'un carrousel sans l'utilisation de librairies.",
+		"problematic":"Les principales proméblatiques de ce projet concernait la logique même de REACT et notamment l'utilisation de sa logique de composants pour éviter tout duplication de code, sa logique de route et les récupérations de paramètres dans l'URL. Les deux autres problématiques concernaient la création d'animation et la création d'un carrousel sans l'utilisation de librairies. Concernant ces deux dernières problématiques, j'ai utilisé Sass, les keyframes et les state de React pour les animations et j'ai utilisés des fonctions pour gérer le carrousel. Pour la récupération des paramètres j'ai utilisé useParams.",
 		"Technologies": [
 			"REACT  /  ",
 			"SASS"
@@ -30,7 +30,7 @@
 		"cover": "Mon_vieux_grimoireC",
 		"description": "Développement du back-end d'un site de notation de livres en utilisant node.js, express et mongoDB pour la base de donnnées. Ce développement a été fait dans le cadre de ma formation Développeur web. Le code devait être le plus modulaire possible et permettre la compression de fichier pour prendre en compte le Green Code.",
 		"link":"https://github.com/MjDev09/P7-BackEnd-Grimoire",
-		"problematic":"Les problématiques de ce projet étaient la création d'un serveur et d'une API RESTful, la mise en place d'un système d'authentification et la gestion de fichiers utilisateurs avec une spécificité qui était de compresser les images téléchargées afin de respecter le Green Code",
+		"problematic":"Les problématiques de ce projet étaient la création d'un serveur et d'une API RESTful, la mise en place d'un système d'authentification et la gestion de fichiers utilisateurs avec une spécificité qui était de compresser les images téléchargées afin de respecter le Green Code. Pour gérer le téléchargement d'image, j'ai utilisé sharp et multer en utilisant plusieurs middleware pour simplifier le code et le rendre plus modulaire.",
 		"Technologies": [
 			"Node.js  /  ",
 			"Express  /  ",
@@ -43,7 +43,7 @@
 		"cover": "Screen_PortfolioC",
 		"description": "Création d'un Portfolio caché dans un écran de décoration sur le site du Portfolio original",
 		"link":"https://mjdev09.github.io/",
-		"problematic":"Les problématiques de ce projet étaient de réutiliser des composants en utilisants des props pour les personnaliser au mieux",
+		"problematic":"Les problématiques de ce projet étaient de réutiliser des composants en utilisants des props pour les personnaliser au mieux.",
 		"Technologies": [
 			"REACT  /  ",
 			"Librairie React Antd  /  ",
